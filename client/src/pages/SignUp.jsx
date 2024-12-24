@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   return (
@@ -34,7 +35,9 @@ const SignUp = () => {
         <div className="flex justify-center gap-2 mt-6 text-sm">
           <p>Already have an account?</p>
           <a href="/signin" className="text-blue-700 font-medium hover:underline">
-            Sign In
+            <Link to="/sign-in">
+              Sign In
+            </Link>
           </a>
         </div>
       </div>
